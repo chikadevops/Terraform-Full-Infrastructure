@@ -1,4 +1,4 @@
-# Create Amazon S£ bucket
+# Create Amazon S3 bucket
 resource "aws_s3_bucket" "backend" {
   bucket = "${lower(var.project)}-backend-bucket"
 
@@ -56,5 +56,3 @@ resource "aws_dynamodb_table" "backend" {
     Name = "${lower(var.project)}-backend-lock"
   }
 }
-
-
