@@ -1,3 +1,12 @@
+# terraform {
+#   backend "s3" {
+#     bucket         = "${lower(var.project)}-backend-bucket"
+#     key            = "terraform.tfstate"
+#     region         = var.region
+#     dynamodb_table = "${lower(var.project)}-backend-lock"
+#   }
+# }
+
 # Create Amazon S3 bucket
 resource "aws_s3_bucket" "backend" {
   bucket = "${lower(var.project)}-backend-bucket"
