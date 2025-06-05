@@ -72,4 +72,4 @@ I can also write the tfvars files for each env e.g dev.tfvars, etc. Then apply u
 
 ![](./img/Tree.png)
 
-*Fig 2. File structure tree*
+*Fig 2. File structure tree* 
