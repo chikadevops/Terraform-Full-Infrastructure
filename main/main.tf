@@ -19,7 +19,7 @@ module "aws_security_group" {
 module "aws_ec2" {
   source              = "../modules/ec2"
   ami                 = var.ami
-  instance_type       = var.instance_type
+  instance_type       = lookup(var.instance_type, terraform.workspace, "t2.micro")
   public_subnet_id    = module.aws_vpc.public_subnet_id
   private_subnet_id_1 = module.aws_vpc.private_subnet_ids[0]
   security_group_ids  = [module.aws_security_group.security_group_id]

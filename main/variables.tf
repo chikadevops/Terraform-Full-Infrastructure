@@ -42,7 +42,13 @@ variable "ami" {
 
 variable "instance_type" {
   description = "Instance type for the EC2 instance"
-  type        = string
+  type        = map(string)
+
+  default = {
+    "dev"   = "t2.micro"
+    "stage" = "t2.medium"
+    "prod"  = "t2.large"
+  }
 }
 
 variable "key_name" {
