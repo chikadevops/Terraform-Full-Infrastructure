@@ -1,5 +1,5 @@
 # AWS Architecture with Terraform
-![](./img/Infrastructure.png)
+![](./img/infrastructure.png)
 
 This project provisions a **secure and modular infrastructure on AWS** using **Terraform.** It includes a **network layer, compute layer (EC2), database layer (RDS), and S3 for storage and backend state management**, all defined and deployed through **Infrastructure as Code (IaC)**. The infrastructure supports private and public subnets, NAT Gateway for internet access in private networks, security groups for traffic control, and a robust backend configuration for safe and collaborative Terraform usage.
 
