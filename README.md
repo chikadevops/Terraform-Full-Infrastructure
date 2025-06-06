@@ -68,6 +68,7 @@ Provisionable in the infrastructure are:
 # Evironment Workspaces
 
 I added the Dev, Stage and Prod environments using `terraform workspace new <env>`, then I switched workspaces with `terraform workspace select <env>`.
+
 I can also write the tfvars files for each env e.g dev.tfvars, etc. Then apply using `terraform apply -var-file=dev.tfvars`, for example.
 
 ![](./img/Tree.png)
